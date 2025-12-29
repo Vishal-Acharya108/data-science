@@ -42,8 +42,8 @@ import numpy as np
 matrix = np.random.randint(1, 100, size=(4, 4))
 
 # Calculate sums
-row_sums = np.sum(matrix, axis=1) # axis=1 is for rows
-col_sums = np.sum(matrix, axis=0) # axis=0 is for columns
+row_sums = np.sum(matrix, axis=1)
+col_sums = np.sum(matrix, axis=0) 
 
 print("Matrix:\n", matrix)
 print("Row Sums:", row_sums)
@@ -51,20 +51,15 @@ print("Column Sums:", col_sums)
 
 import numpy as np
 
-# 1. Create an example array
 original_array = np.array([10, 20, 30, 40, 50])
 
-# 2. Calculate min and max values
 x_min = original_array.min()
 x_max = original_array.max()
 
-# 3. Apply the formula
 normalized_array = (original_array - x_min) / (x_max - x_min)
 
 print("Original Array:", original_array)
 print("Normalized Array:", normalized_array)
-
-
 
 matrix3 = np.random.randint(1, 100, size=(4, 4))
 x_min = matrix3.min()
